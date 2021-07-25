@@ -1,0 +1,164 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+.card__container-main {
+  display: grid;
+  width: 60vw;
+  height: 80vh;
+  grid-template-rows: 0.7fr 1fr 1fr;
+  grid-template-columns: 0.5fr 1fr 1fr;
+  grid-template-areas: "top1 top2 top3" "middle1 middle2 middle3" "bottom1 bottom2 bottom3";
+  gap: 20px;
+  margin: 15px auto;
+  border: solid black;
+}
+
+.card__spain {
+  grid-area: top1;
+  border: solid black;
+}
+
+.card__container1 {
+  grid-area: top2;
+  border: solid black;
+  display: flex;
+  justify-content: space-between;
+}
+.card__container1 .card__gardens {
+  width: 47%;
+  height: 100%;
+  border: solid black;
+}
+.card__container1 .card__island {
+  width: 47%;
+  height: 100%;
+  border: solid black;
+}
+
+.card__container2 {
+  grid-area: top3;
+  border: solid black;
+  display: flex;
+  justify-content: space-between;
+}
+.card__container2 .card__upload {
+  width: 48%;
+  height: 100%;
+  border: solid black;
+}
+.card__container2 .card__burano {
+  width: 24%;
+  height: 100%;
+  border: solid black;
+}
+.card__container2 .card__places {
+  width: 24%;
+  height: 100%;
+  border: solid black;
+}
+
+.card__venice-small {
+  grid-area: middle1;
+  border: solid black;
+}
+
+.card__florence {
+  grid-area: middle2;
+  border: solid black;
+}
+
+.card__container3 {
+  grid-area: middle3;
+  border: solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card__container3 .card__tags {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 30%;
+  border: solid black;
+  justify-content: space-between;
+}
+.card__container3 .card__tags .pictures {
+  width: 22%;
+  height: 100%;
+  border: solid black;
+}
+.card__container3 .card__tags .places {
+  width: 22%;
+  height: 100%;
+  border: solid black;
+}
+.card__container3 .card__tags .trip {
+  width: 44%;
+  height: 100%;
+  border: solid black;
+}
+.card__container3 .card__container4 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 60%;
+  border: solid black;
+  justify-content: space-between;
+}
+.card__container3 .card__container4 .rome {
+  width: 48%;
+  height: 100%;
+  border: solid black;
+}
+.card__container3 .card__container4 .vatican {
+  width: 48%;
+  height: 100%;
+  border: solid black;
+}
+
+.card__monuments {
+  grid-area: bottom1;
+  border: solid black;
+}
+
+.card__container5 {
+  grid-area: bottom2;
+  border: solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.card__container5 .card__doors {
+  width: 48%;
+  height: 100%;
+  border: solid black;
+}
+.card__container5 .card__house {
+  width: 48%;
+  height: 100%;
+  border: solid black;
+}
+
+.card__venice-big {
+  grid-area: bottom3;
+  border: solid black;
+}
+
+/*# sourceMappingURL=style.css.map */
