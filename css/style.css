@@ -1,37 +1,3 @@
-tml, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  box-sizing: border-box;
-  font-size: 100%;
-}
-
-.card__container-main {
-  display: grid;
-  width: 75vw;
-  height: 85vh;
-  grid-template-rows: 0.7fr 1.6fr 1fr;
-  grid-template-columns: 0.5fr 1fr 1fr;
-  grid-template-areas: "top1 top2 top3" "middle1 middle2 middle3" "bottom1 bottom2 bottom3";
-  gap: 20px;
-  margin: 15px auto;
-  background: rgba(190, 212, 212, 0.2);
-  font-family: "Arial Narrow", Arial, sans-serif;
-  color: rgba(255, 255, 255, 0.767);
-}
-
 .card__spain--disable {
   grid-area: top1;
   background: center/cover url(../img/spain.jpg) no-repeat;
@@ -59,6 +25,35 @@ time, mark, audio, video {
   box-shadow: 3px 3px 3px #ddd9d9;
 }
 
+.card__container3 .card__tags .places--disable {
+  width: 22%;
+  height: 100%;
+  background: center/cover no-repeat url(../img/places.JPG);
+  box-shadow: 3px 3px 3px #ddd9d9;
+  border-radius: 5px;
+}
+.card__container3 .card__tags .trip--disable {
+  width: 44%;
+  height: 100%;
+  background: center/cover no-repeat url(../img/trip.JPG);
+  box-shadow: 3px 3px 3px #ddd9d9;
+  border-radius: 5px;
+}
+
+.card__monuments--disable {
+  grid-area: bottom1;
+  background: center/contain no-repeat url(../img/monuments.JPG);
+  box-shadow: 3px 3px 3px #ddd9d9;
+  border-radius: 5px;
+}
+
+.card__venice-big--disable {
+  grid-area: bottom3;
+  box-shadow: 3px 3px 3px #ddd9d9;
+  border-radius: 5px;
+  background: center/cover no-repeat url(../img/card14.png);
+}
+
 .card__container2 {
   grid-area: top3;
   display: flex;
@@ -74,7 +69,11 @@ time, mark, audio, video {
   margin: 10px;
   border: dashed #493e3e 1px;
   border-radius: 5px;
-  padding-bottom: 20%;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  justify-content: space-around;
+  padding-bottom: 35px;
 }
 .card__container2 .card__upload-border .card__upload-icon {
   width: 20px;
@@ -110,14 +109,18 @@ time, mark, audio, video {
   height: 100%;
   background: center/cover url(../img/burano.png) no-repeat;
   border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .card__container2 .card__burano-content {
-  margin: 35% auto 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 35%;
   text-align: center;
 }
 .card__container2 .card__burano-content .card__burano-country {
-  width: 40%;
-  height: auto;
   margin: 5px auto;
   background: rgba(245, 49, 14, 0.774);
   text-align: center;
@@ -128,6 +131,10 @@ time, mark, audio, video {
 .card__container2 .card__burano-content .card__burano-location {
   font-size: 12px;
   font-weight: lighter;
+  cursor: pointer;
+}
+.card__container2 .card__burano-content .card__burano-location:hover {
+  color: salmon;
 }
 .card__container2 .card__burano-content .card__burano-date {
   font-size: 10px;
@@ -151,29 +158,37 @@ time, mark, audio, video {
   width: 24%;
   height: 100%;
   border-radius: 5px;
-  background: center/cover url(../img/card_places.png) no-repeat;
+  background: center/cover url(../img/doors.png) no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
-.card__container2 .card__places-icon {
+.card__container2 .card__places-content {
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.card__container2 .card__places-content-icon {
   width: 30px;
   height: 40px;
   background: center/cover url(../img/Icon-place.svg) no-repeat;
-  margin: 45% auto 10%;
 }
-.card__container2 .card__places-icon:hover {
+.card__container2 .card__places-content-icon:hover {
   background: center/cover url(../img/Icon-place-hovered.svg) no-repeat;
 }
-.card__container2 .card__places-title {
+.card__container2 .card__places-content-title {
   text-align: center;
   font-size: 12px;
   font-weight: lighter;
   line-height: 5px;
 }
-.card__container2 .card__places-title span {
+.card__container2 .card__places-content-title span {
   font-size: 18px;
 }
-.card__container2 .card__places-btn {
+.card__container2 .card__places-content-btn {
   margin-top: 35%;
-  margin-left: 6px;
   background: #0570d4;
   color: rgba(255, 255, 255, 0.767);
   border-radius: 5px;
@@ -182,7 +197,7 @@ time, mark, audio, video {
   border: none;
   cursor: pointer;
 }
-.card__container2 .card__places-btn:hover {
+.card__container2 .card__places-content-btn:hover {
   background: #040450;
 }
 
@@ -191,6 +206,7 @@ time, mark, audio, video {
   grid-area: middle1;
   border-radius: 5px;
   box-shadow: 3px 3px 3px #ddd9d9;
+  overflow: hidden;
 }
 .card__venice-small .card__venice-background {
   width: 100%;
@@ -198,8 +214,6 @@ time, mark, audio, video {
   background: center/cover url(../img/venice.png) no-repeat;
 }
 .card__venice-small .card__venice-background .card__venice-country {
-  width: 20%;
-  height: auto;
   background: rgba(245, 49, 14, 0.774);
   text-align: center;
   font-size: 8px;
@@ -214,10 +228,10 @@ time, mark, audio, video {
   font-size: 12px;
   font-weight: bolder;
   margin-top: 10px;
-  margin-left: 5px;
+  margin-left: 10px;
 }
 .card__venice-small-description {
-  margin-left: 5px;
+  margin-left: 10px;
   margin-top: 10px;
   color: black;
   font-size: 10px;
@@ -227,9 +241,13 @@ time, mark, audio, video {
   -webkit-text-fill-color: transparent;
 }
 .card__venice-small-btn {
+  width: 100%;
   position: absolute;
-  top: 135px;
-  left: 55px;
+  top: 150px;
+  display: flex;
+  justify-content: center;
+}
+.card__venice-small-btn button {
   background-color: #0570d4;
   color: rgba(255, 255, 255, 0.767);
   border-radius: 15px;
@@ -238,18 +256,80 @@ time, mark, audio, video {
   padding: 5px 10px;
   cursor: pointer;
 }
-.card__venice-small-btn:hover {
+.card__venice-small-btn button:hover {
   background: #040450;
 }
 
 .card__florence {
   grid-area: middle2;
-  border: solid black;
+  position: relative;
+  background: center/cover no-repeat url(../img/florence.png);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 3px 3px 3px #ddd9d9;
+}
+.card__florence-background {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.1);
+  font-size: 120px;
+  top: 100px;
+  left: -50px;
+}
+.card__florence-country {
+  background-color: white;
+  color: black;
+  font-size: 8px;
+  text-align: center;
+  float: right;
+  margin-top: 15px;
+  margin-right: 15px;
+  padding: 3px 6px;
+  border-radius: 3px;
+}
+.card__florence-content {
+  position: absolute;
+  width: 100%;
+  top: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+.card__florence-content .card__florence-title {
+  border-left: solid #08cebd 3px;
+  padding-left: 20px;
+  cursor: pointer;
+}
+.card__florence-content .card__florence-title:hover {
+  color: #08cebd;
+}
+.card__florence-content .card__florence-title .card__florence-date {
+  font-size: 10px;
+  color: #08cebd;
+}
+.card__florence-content .card__florence-title .card__florence-location {
+  font-size: 20px;
+  font-weight: lighter;
+}
+.card__florence-content .card__florence-btn {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.card__florence-content .card__florence-btn button {
+  background-color: #0570d4;
+  color: rgba(255, 255, 255, 0.767);
+  padding: 5px 16px;
+  border-radius: 20px;
+  border: none;
+  font-size: 12px;
+  cursor: pointer;
+}
+.card__florence-content .card__florence-btn button:hover {
+  background: #040450;
 }
 
 .card__container3 {
   grid-area: middle3;
-  border: solid black;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -259,51 +339,151 @@ time, mark, audio, video {
   flex-direction: row;
   width: 100%;
   height: 30%;
-  border: solid black;
   justify-content: space-between;
 }
 .card__container3 .card__tags .pictures {
   width: 22%;
   height: 100%;
-  border: solid black;
+  background: #0570d4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 3px 3px 3px #ddd9d9;
+  border-radius: 5px;
 }
-.card__container3 .card__tags .places {
-  width: 22%;
-  height: 100%;
-  border: solid black;
+.card__container3 .card__tags .pictures-icon {
+  width: 15px;
+  height: 15px;
+  background: center/cover no-repeat url(../img/icon-pic.svg);
+  cursor: pointer;
 }
-.card__container3 .card__tags .trip {
-  width: 44%;
-  height: 100%;
-  border: solid black;
+.card__container3 .card__tags .pictures-icon:hover {
+  background: center/cover no-repeat url(../img/icon-pic-hovered.svg);
+}
+.card__container3 .card__tags .pictures-title {
+  font-size: 8px;
+  font-weight: lighter;
+  margin-top: 5px;
 }
 .card__container3 .card__container4 {
   display: flex;
   flex-direction: row;
   width: 100%;
   height: 60%;
-  border: solid black;
   justify-content: space-between;
 }
-.card__container3 .card__container4 .rome {
+.card__container3 .card__container4 .card__rome {
   width: 48%;
   height: 100%;
-  border: solid black;
+  background: center/cover no-repeat url(../img/rome.png);
+  box-shadow: 3px 3px 3px #ddd9d9;
+  border-radius: 5px;
 }
-.card__container3 .card__container4 .vatican {
+.card__container3 .card__container4 .card__rome-header {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin: 15px auto;
+}
+.card__container3 .card__container4 .card__rome-header-country {
+  background: rgba(245, 49, 14, 0.774);
+  text-align: center;
+  padding: 5px 5px 0;
+  font-size: 8px;
+  border-radius: 3px;
+}
+.card__container3 .card__container4 .card__rome-header-menu {
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  cursor: pointer;
+}
+.card__container3 .card__container4 .card__rome-header-menu:hover {
+  background: rgba(128, 128, 128, 0.51);
+  border-radius: 50%;
+}
+.card__container3 .card__container4 .card__rome-content {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-indent: 20px;
+}
+.card__container3 .card__container4 .card__rome-content h3 {
+  font-size: 15px;
+  font-weight: lighter;
+  cursor: pointer;
+}
+.card__container3 .card__container4 .card__rome-content h3:hover {
+  color: salmon;
+}
+.card__container3 .card__container4 .card__rome-content p {
+  font-size: 10px;
+}
+.card__container3 .card__container4 .card__vatican {
   width: 48%;
   height: 100%;
-  border: solid black;
+  background: center/cover no-repeat url(../img/vatican.png);
+  box-shadow: 3px 3px 3px #ddd9d9;
+  border-radius: 5px;
+  border-bottom: solid #0570d4 3px;
 }
-
-.card__monuments {
-  grid-area: bottom1;
-  border: solid black;
+.card__container3 .card__container4 .card__vatican-header {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin: 15px auto;
+}
+.card__container3 .card__container4 .card__vatican-header-country {
+  background: #0570d4;
+  text-align: center;
+  padding: 5px 5px 0;
+  font-size: 8px;
+  border-radius: 3px;
+}
+.card__container3 .card__container4 .card__vatican-header-menu {
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  cursor: pointer;
+}
+.card__container3 .card__container4 .card__vatican-header-menu:hover {
+  background: rgba(128, 128, 128, 0.51);
+  border-radius: 50%;
+}
+.card__container3 .card__container4 .card__vatican-content {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-indent: 20px;
+}
+.card__container3 .card__container4 .card__vatican-content h3 {
+  font-size: 15px;
+  font-weight: lighter;
+  cursor: pointer;
+}
+.card__container3 .card__container4 .card__vatican-content h3:hover {
+  color: salmon;
+}
+.card__container3 .card__container4 .card__vatican-content p {
+  font-size: 10px;
+}
+.card__container3 .card__container4 .card__vatican-view {
+  text-indent: 20px;
+}
+.card__container3 .card__container4 .card__vatican-view a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.767);
+  font-size: 10px;
+}
+.card__container3 .card__container4 .card__vatican-view a:hover {
+  color: salmon;
 }
 
 .card__container5 {
   grid-area: bottom2;
-  border: solid black;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -311,17 +491,164 @@ time, mark, audio, video {
 .card__container5 .card__doors {
   width: 48%;
   height: 100%;
-  border: solid black;
+  background: center/cover no-repeat url(../img/doors.png);
+  box-shadow: 3px 3px 3px #ddd9d9;
+  border-radius: 5px;
+  border-bottom: #af1b0b solid 2px;
+}
+.card__container5 .card__doors-like {
+  width: 25px;
+  height: 25px;
+  background: center/cover no-repeat url(../img/icon-heart.svg);
+  float: right;
+  margin-top: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.card__container5 .card__doors-like:hover {
+  background: center/cover no-repeat url(../img/icon-heart-hovered.svg);
+}
+.card__container5 .card__doors-content {
+  margin-top: 85%;
+  width: 85%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.card__container5 .card__doors-content-header-title {
+  font-size: 15px;
+  font-weight: lighter;
+  cursor: pointer;
+}
+.card__container5 .card__doors-content-header-title:hover {
+  color: salmon;
+}
+.card__container5 .card__doors-content-header-location {
+  font-size: 10px;
+}
+.card__container5 .card__doors-content-likes {
+  font-size: 8px;
+  background: rgba(245, 49, 14, 0.774);
+  padding: 1px 6px;
+  border-radius: 8px;
 }
 .card__container5 .card__house {
   width: 48%;
   height: 100%;
-  border: solid black;
+  position: relative;
+  background: center/cover no-repeat url(../img/burano.png);
+  box-shadow: 3px 3px 3px #ddd9d9;
+  border-radius: 5px;
+}
+.card__container5 .card__house-like {
+  width: 25px;
+  height: 25px;
+  background: center/cover no-repeat url(../img/icon-heart.svg);
+  float: right;
+  margin-top: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.card__container5 .card__house-like:hover {
+  background: center/cover no-repeat url(../img/icon-heart-hovered.svg);
+}
+.card__container5 .card__house-content-container {
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  top: 75%;
+  display: flex;
+  justify-content: center;
+}
+.card__container5 .card__house-content-container .card__house-content-tag {
+  width: 90%;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 3px 3px 3px #ddd9d9;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+}
+.card__container5 .card__house-content-container .card__house-content-tag .card__house-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.card__container5 .card__house-content-container .card__house-content-tag .card__house-content-reviews {
+  font-size: 10px;
+}
+.card__container5 .card__house-content-container .card__house-content-tag .card__house-content-reviews-stars {
+  color: yellow;
+}
+.card__container5 .card__house-content-container .card__house-content-tag .card__house-content-reviews-number {
+  color: grey;
+}
+.card__container5 .card__house-content-container .card__house-content-tag .card__house-content-details {
+  margin-top: 5px;
+  line-height: 10px;
+}
+.card__container5 .card__house-content-container .card__house-content-tag .card__house-content-details-title {
+  font-size: 15px;
+  color: black;
+  font-weight: lighter;
+}
+.card__container5 .card__house-content-container .card__house-content-tag .card__house-content-details-location {
+  color: grey;
+  font-size: 10px;
+}
+.card__container5 .card__house-content-container .card__house-content-tag .card__house-content-price {
+  font-size: 15px;
+  color: black;
+}
+.card__container5 .card__house-content-container .card__house-content-tag .card__house-view-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.card__container5 .card__house-content-container .card__house-content-tag .card__house-view-btn i {
+  color: #0570d4;
+}
+.card__container5 .card__house-content-container .card__house-content-tag .card__house-view-btn i:hover {
+  color: #040450;
 }
 
-.card__venice-big {
-  grid-area: bottom3;
-  border: solid black;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+.card__container-main {
+  display: grid;
+  width: 80vw;
+  height: 100vh;
+  grid-template-rows: 0.7fr 1fr 1fr;
+  grid-template-columns: 0.5fr 1fr 1fr;
+  grid-template-areas: "top1 top2 top3" "middle1 middle2 middle3" "bottom1 bottom2 bottom3";
+  gap: 20px;
+  margin: 15px auto;
+  background: rgba(190, 212, 212, 0.2);
+  font-family: "Arial Narrow", Arial, sans-serif;
+  color: rgba(255, 255, 255, 0.767);
+}
+
+div[id=transform]:hover {
+  transform: scale(1.1);
+  transition: 0.8s;
 }
 
 /*# sourceMappingURL=style.css.map */

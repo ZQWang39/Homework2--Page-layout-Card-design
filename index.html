@@ -5,27 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <title>Card Design</title>
 </head>
 <body>
     <div class="card__container-main">
-        <div class="card__spain--disable">
+        <div id="transform" class="card__spain--disable">
         </div>
         <div class="card__container1">
-            <div class="card__gardens--disable"></div>
-            <div class="card__island--disable"></div>
+            <div id="transform" class="card__gardens--disable"></div>
+            <div id="transform" class="card__island--disable"></div>
         </div>
 
         <div class="card__container2">
-            <div class="card__upload">
+            <div id="transform" class="card__upload">
                 <div class="card__upload-border">
                     <div class="card__upload-icon"></div>
                     <h3 class="card__upload-title">Upload a new trip</h3>
                     <p>Drag a file to attach or <br> <a class="card__upload-browse" href="#">browse</a></p>
                 </div>
             </div>
-            <div class="card__burano">
+            <div id="transform" class="card__burano">
                 <div class="card__burano-content">
                     <div class="card__burano-country">ITALY</div>
                     <h3 class="card__burano-location">BURANO<br>ISLAND</h3>
@@ -34,13 +35,15 @@
                 <button class="card__burano-btn"> View Trip</button>
             </div>
 
-            <div class="card__places">
-                <div class="card__places-icon"></div>
-                <h3 class="card__places-title">Places<br><span>_</span></h3>
-                <button class="card__places-btn">Know more</button>
+            <div id="transform" class="card__places">
+                <div class="card__places-content">
+                    <div class="card__places-content-icon"></div>
+                    <h3 class="card__places-content-title">Places<br><span>_</span></h3>
+                    <button class="card__places-content-btn">Know more</button>
+                </div>
             </div>
         </div>
-        <div class="card__venice-small">
+        <div id="transform" class="card__venice-small">
             <div class="card__venice-background">
                 <span class="card__venice-country">ITALY</span>
 
@@ -49,32 +52,115 @@
             <p class="card__venice-small-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 D blanditiis qui aperiam! Lorem ipsum dolor sit, D blanditiis qui aperiam!
             </p>
-            
-            <button class="card__venice-small-btn">View more</button>
+            <div class="card__venice-small-btn">
+               <button >View more</button>
+            </div>
         </div>
-        <div class="card__florence"></div>
+        <div id="transform" class="card__florence">
+            <span class="card__florence-background">Florence</span>
+            <div class="card__florence-country">ITALY</div>
+            <div class="card__florence-content">
+                <div class="card__florence-title">
+                        <span class="card__florence-date">November 2017</span>
+                        <h3 class="card__florence-location">Florence, Italy</h3>
+                </div>
+                 <div class="card__florence-btn">
+                    <button >View trip</button>
+                 </div>
+           </div>
+
+        </div>
+           
         <div class="card__container3">
             <div class="card__tags">
-                <div class="pictures"></div>
-                <div class="places"></div>
-                <div class="trip"></div>
+                <div id="transform" class="pictures">
+                    <div class="pictures-icon"></div>
+                    <h3 class="pictures-title">Pictures</h3>
+                </div>
+                <div id="transform" class="places--disable"></div>
+                <div id="transform" class="trip--disable"></div>
             </div>
             <div class="card__container4">
-                <div class="rome"></div>
-                <div class="vatican"></div>
-            </div>
-        </div>
-        <div class="card__monuments"></div>
-        <div class="card__container5">
-            <div class="card__doors">
-            
-            </div>
-            <div class="card__house">
-            
-            </div>
-        </div>
-        <div class="card__venice-big"></div>
+                <div id="transform" class="card__rome">
+                    <div class="card__rome-header">
+                        <span class="card__rome-header-country">ITALY</span>
+                        <span class="card__rome-header-menu">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </span>   
+                    </div>
+                    <div class="card__rome-content">
+                        <h3>The Colosseum</h3>
+                        <p>Rome, Italy</p>
+                    </div>
 
+                </div>
+                <div id="transform" class="card__vatican">
+                    <div class="card__vatican-header">
+                        <span class="card__vatican-header-country">VATICAN</span>
+                        <span class="card__vatican-header-menu">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </span>   
+                    </div>
+                    <div class="card__vatican-content">
+                        <h3>Vatican City</h3>
+                        <p>Vatican</p>
+                    </div>
+                    <div class="card__vatican-view">
+                        <a href="#"> View Trip ➜</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div id="transform" class="card__monuments--disable"></div>
+        <div class="card__container5">
+            <div id="transform" class="card__doors">
+                <span class="card__doors-like"></span>
+                <div class="card__doors-content">
+                    <div class="card__doors-content-header">
+                      <h3 class="card__doors-content-header-title">Burano Doors</h3>
+                      <p class="card__doors-content-header-location">Burano, Venice, Italy</p>
+                    </div>
+                    <span class="card__doors-content-likes">16</span>  
+                </div>
+                
+            
+            </div>
+            <div id="transform" class="card__house">
+                <span class="card__house-like"></span>
+                <div class="card__house-content-container">
+                    <div class="card__house-content-tag">
+                        <div class="card__house-content">
+                            <div class="card__house-content-reviews">
+                                <span class="card__house-content-reviews-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                </span>
+                                <span class="card__house-content-reviews-number">
+                                    420 reviews
+                                </span>   
+                            </div>
+                            <div class="card__house-content-details">
+                                <h3 class="card__house-content-details-title">The Blue House</h3>
+                                <span class="card__house-content-details-location">Burano, Venice, Italy</span>
+                            </div>
+                            <div class="card__house-content-price">
+                                $250 per night  
+                            </div>
+                        </div>
+                        <div class="card__house-view-btn">
+                            <a href="#"><i class="fas fa-arrow-circle-right"></i></a>
+                        </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div id="transform" class="card__venice-big--disable">
+            
+        </div>
     </div>
     
 </body>
