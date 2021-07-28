@@ -1,0 +1,160 @@
+@import"./variables.scss";
+.card__container3{
+    grid-area:middle3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .card__tags{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height:30%;
+        justify-content: space-between;
+        .pictures{
+            width: 22%;
+            height:100%;
+            background:$button-color;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: $box-shadow;
+            border-radius: 5px;
+            &-icon{
+               width:15px;
+               height:15px;
+               background: center/cover no-repeat url(../img/icon-pic.svg);
+               cursor: pointer;
+               &:hover{
+                background: center/cover no-repeat url(../img/icon-pic-hovered.svg);
+               }
+            }
+            &-title{
+                font-size: 8px;
+                font-weight: lighter;
+                margin-top: 5px;
+            }
+
+        }
+    }
+    .card__container4{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height:65%;
+        justify-content: space-between;
+        .card__rome{
+            width: 48%;
+            height:100%;
+            background:center/cover no-repeat url(../img/rome.png);
+            box-shadow:$box-shadow;
+            border-radius: 5px;
+            &-header{
+                width: 80%;
+                display:flex;
+                justify-content: space-between;
+                margin:15px auto;
+                &-country{
+                    background: $country-tag-background;
+                    text-align: center;
+                    padding:5px 5px 0;
+                    font-size: 8px;
+                    border-radius: 3px
+                }
+                &-menu{
+                    width:18px;
+                    height:18px;
+                    text-align: center;
+                    cursor: pointer;
+                    &:hover{
+                        background: $radio-background;
+                        border-radius: 50%;
+                    }
+                }
+            }
+            &-content{
+                height:50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                text-indent: 20px;
+                h3{
+                    font-size: 15px;
+                    font-weight: lighter;
+                    cursor: pointer;
+                    &:hover{
+                    color:$text-hovered
+                }
+                }
+                p{
+                    font-size: 10px;
+                }
+
+            }
+            
+        }
+        .card__vatican{
+            width: 48%;
+            height:100%;
+            background:center/cover no-repeat url(../img/vatican.png);
+            box-shadow:$box-shadow;
+            border-radius: 5px;
+            border-bottom: solid $button-color 3px;
+            &-header{
+                width: 80%;
+                display:flex;
+                justify-content: space-between;
+                margin:15px auto;
+                &-country{
+                    background: $button-color;
+                    text-align: center;
+                    padding:5px 5px 0;
+                    font-size: 8px;
+                    border-radius: 3px
+                }
+                &-menu{
+                    width:18px;
+                    height:18px;
+                    text-align: center;
+                    cursor: pointer;
+                    &:hover{
+                        background:$radio-background;
+                        border-radius: 50%;
+                    }
+                }
+            }
+            &-content{
+                height: 40%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-indent: 20px;
+                h3{
+                    font-size: 15px;
+                    font-weight: lighter;
+                    cursor: pointer;
+                    &:hover{
+                    color:$text-hovered
+                }
+                }
+                p{
+                    font-size: 10px;
+                }
+
+            }
+            &-view{
+                text-indent: 20px;
+                
+               a{
+                text-decoration: none;
+                color:$text-color;
+                font-size: 10px;
+                &:hover{
+                    color:$text-hovered
+                }
+               }
+            }
+        }
+
+    }
+}

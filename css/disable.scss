@@ -1,0 +1,60 @@
+@import"./variables.scss";
+.card__spain--disable{
+    grid-area:top1;
+    background: center/cover url(../img/spain.jpg) no-repeat;
+    border-radius: 5px;
+    box-shadow: $box-shadow;
+}
+
+.card__container1{
+    grid-area:top2;
+    display:flex;
+    justify-content: space-between;
+    .card__gardens--disable{
+        width:47%;
+        height:100%;
+        background: center/cover url(../img/garden.JPG) no-repeat;
+        border-radius: 5px;
+        box-shadow: $box-shadow;
+    }
+    .card__island--disable{
+        width:47%;
+        height:100%;
+        background: center/cover url(../img/island.JPG) no-repeat;
+        border-radius: 5px;
+        box-shadow: $box-shadow;
+    }
+}
+.card__container3{
+    .card__tags{
+        .places--disable{
+            width: 22%;
+            height:100%;
+            background: center/cover no-repeat url(../img/places.JPG);
+            box-shadow: $box-shadow;
+            border-radius: 5px;
+        }
+        .trip--disable{
+            width: 44%;
+            height:100%;
+            background: center/cover no-repeat url(../img/trip.JPG);
+            box-shadow: $box-shadow;
+            border-radius: 5px;
+        }
+    }
+}
+
+.card__monuments--disable{
+    grid-area:bottom1;
+    background: center/cover no-repeat url(../img/monuments.JPG);
+    box-shadow: $box-shadow;
+    border-radius: 5px;
+}
+
+.card__venice-big--disable{
+    grid-area:bottom3;
+    box-shadow: $box-shadow;
+    border-radius: 5px;
+    background:center/cover no-repeat url(../img/card14.png);
+
+}
