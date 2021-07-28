@@ -5,6 +5,7 @@ Project 2
 Overall:
 
 Make 3-5 travel Cards by using BEM class naming, HTML, SCSS, using display-grid to adjust the page layout and flex-box to adjust small parts.
+※Please be informed, in order to use grid display meanwhlie  present a better look, there are few cards are actually disabled(background pics only), the styles for those disabled cards are saved in disable.scss.
 
 Purpose:
 
