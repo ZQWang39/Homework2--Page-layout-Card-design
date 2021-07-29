@@ -53,11 +53,7 @@
                 justify-content: space-between;
                 margin:15px auto;
                 &-country{
-                    background: $country-tag-background;
-                    text-align: center;
-                    padding:5px 5px 0;
-                    font-size: 8px;
-                    border-radius: 3px
+                    @include country-tag;
                 }
                 &-menu{
                     width:18px;
@@ -103,11 +99,8 @@
                 justify-content: space-between;
                 margin:15px auto;
                 &-country{
-                    background: $button-color;
-                    text-align: center;
-                    padding:5px 5px 0;
-                    font-size: 8px;
-                    border-radius: 3px
+                    @include country-tag($background:$button-color);
+                   
                 }
                 &-menu{
                     width:18px;

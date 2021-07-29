@@ -9,11 +9,7 @@
         height:45%;
         background:center/cover url(../img/venice.png) no-repeat;
         .card__venice-country{
-            background: $country-tag-background;
-            text-align: center;
-            font-size: 8px;
-            padding:3px;
-            border-radius: 3px;
+            @include country-tag;
             float:right;
             margin-top: 15px;
             margin-right: 15px;

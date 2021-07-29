@@ -13,15 +13,12 @@
         left:-50px;
     }
     &-country{
-        background-color:white;
+        @include country-tag($background:white);
         color:black;
-        font-size: 8px;
-        text-align: center;
         float:right;
         margin-top:15px;
         margin-right: 15px;
-        padding:3px 6px;
-        border-radius: 3px;
+        
     }
     &-content{
         position: absolute;

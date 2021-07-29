@@ -5,10 +5,18 @@ $text-color:rgba(255, 255, 255, 0.767);
 $text-color-green:rgb(8, 206, 189);
 $country-tag-background:rgba(245, 49, 14, 0.774);
 $radio-background: rgba(128, 128, 128, 0.51);
-$box-shadow:3px 3px 3px rgb(221, 217, 217);
+
 
 
 @mixin shadow() {
     border-radius: 5px;
     box-shadow: 3px 3px 3px  rgb(221, 217, 217);
+}
+
+@mixin country-tag($background:rgba(245, 49, 14, 0.774)) {
+    background:$background;
+    text-align: center;
+    font-size: 8px;
+    padding:3px;
+    border-radius: 3px;
 }
