@@ -6,6 +6,7 @@
 @import "./card__container5.scss";
 @import"./variables.scss";
 
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -48,225 +49,225 @@ div[id="transform"]:hover{
     transition: 0.8s;
 
 }
-
-
-  @media screen and (max-width: 768px) {
-    .card__container-main {
-      display: grid;
-      width: 100vw;
-      height: 100vh;
-      grid-template-rows: repeat(5, 1fr);
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-areas:
-       "t1 t2 t2"
-       "t3 t3 t4" 
-       "m5 m6 m6" 
-       "m7 m8 m8" 
-       "b9 b9 b9";
-      grid-gap: 0;
-    }
-  
-    .card__spain--disable {
-      grid-area: t1;
-    }
-    .card__container1{
-      grid-area: t2;
-    }
-  
-    .card__container2 {
-      grid-area: t3;
-    }
-  
-    .card__venice-small {
-      grid-area: t4;
-    }
-  
-    .card__florence {
-      grid-area: m5;
-    }
-  
-    .card__container3 {
-      grid-area: m6;
-    }
-  
-    .card__monuments--disable {
-      grid-area: m7;
-    }
-  
-    .card__container5 {
-      grid-area: m8;
-    }
-  
-    .card__venice-big--disable {
-      grid-area: b9;
-    }
-    .card__container1{
-        display:flex;
-        justify-content: unset;
-        .card__gardens--disable{
-           flex-grow: 1 ;
-        }
-        .card__island--disable{
-           flex-grow: 1 ;
-    }
-   }
-     .card__container2{
-        display:flex;
-        justify-content: unset;
-        .card__upload{
-            flex-grow: 1;
-        }
-    }
-    .card__container3{
-        display:flex;
-        justify-content: unset;
-        .card__tags{
-            display:flex;
-            justify-content: unset;
-            .pictures{
-                flex-grow: 1;
-            }
-            .places--disable{
-                flex-grow: 1;
-            }
-            .trip--disable{
-                flex-grow: 1;
-            }
-        }
-        .card__container4{
-            display:flex;
-            justify-content: unset;
-            height:70%;
-            .card__rome{
-                flex-grow: 1;
-                
-            }
-            .card__vatican{
-                flex-grow: 1;
-            }
-     }
-    }
-
-    .card__container5{
-        display:flex;
-        justify-content: unset;
-        .card__doors{
-            flex-grow: 1;
-        }
-        .card__house{
-            flex-grow: 1;
-        }
-
-    }
+@media screen and (max-width: 768px) {
+  .card__container-main {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+     "t1 t2 t2"
+     "t3 t3 t4" 
+     "m5 m6 m6" 
+     "m7 m8 m8" 
+     "b9 b9 b9";
+    grid-gap: 0;
   }
 
-  @media screen and (max-width: 414px) {
-    .card__container-main {
-      display: grid;
-      width: 100vw;
-      height: 100vh;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: repeat(6,1fr);
-      grid-template-areas:
-       "t1 t2"
-       "t3 t4 " 
-       "m5 m5" 
-       "m6 m6" 
-       "b7 b8"
-       "b9 b9";
-      grid-gap: 0;
-    }
-  
-    .card__spain--disable {
-      grid-area: t1;
-    }
-    .card__container1{
-      grid-area: t2;
-    }
-  
-    .card__container2 {
-      grid-area: t3;
-    }
-  
-    .card__venice-small {
-      grid-area: t4;
-    }
-  
-    .card__florence {
-      grid-area: m5;
-    }
-  
-    .card__container3 {
-      grid-area: m6;
-    }
-  
-    .card__monuments--disable {
-      grid-area: b7;
-    }
-  
-    .card__container5 {
-      grid-area: b8;
-    }
-  
-    .card__venice-big--disable {
-      grid-area: b9;
-    }
-    .card__container1{
-        display:flex;
-        justify-content: unset;
-        .card__gardens--disable{
-           flex-grow: 1 ;
-        }
-        .card__island--disable{
-           flex-grow: 1 ;
-    }
-   }
-     .card__container2{
-        display:flex;
-        justify-content: unset;
-        .card__upload{
-            flex-grow: 1;
-        }
-    }
-    .card__container3{
-        display:flex;
-        justify-content: unset;
-        .card__tags{
-            display:flex;
-            justify-content: unset;
-            .pictures{
-                flex-grow: 1;
-            }
-            .places--disable{
-                flex-grow: 1;
-            }
-            .trip--disable{
-                flex-grow: 1;
-            }
-        }
-        .card__container4{
-            display:flex;
-            justify-content: unset;
-            height:70%;
-            .card__rome{
-                flex-grow: 1;
-                
-            }
-            .card__vatican{
-                flex-grow: 1;
-            }
-     }
-    }
-
-    .card__container5{
-        display:flex;
-        justify-content: unset;
-        .card__doors{
-            flex-grow: 1;
-        }
-        .card__house{
-            flex-grow: 1;
-        }
-
-    }
+  .card__spain--disable {
+    grid-area: t1;
   }
+  .card__container1{
+    grid-area: t2;
+  }
+
+  .card__container2 {
+    grid-area: t3;
+  }
+
+  .card__venice-small {
+    grid-area: t4;
+  }
+
+  .card__florence {
+    grid-area: m5;
+  }
+
+  .card__container3 {
+    grid-area: m6;
+  }
+
+  .card__monuments--disable {
+    grid-area: m7;
+  }
+
+  .card__container5 {
+    grid-area: m8;
+  }
+
+  .card__venice-big--disable {
+    grid-area: b9;
+  }
+  .card__container1{
+      display:flex;
+      justify-content: unset;
+      .card__gardens--disable{
+         flex-grow: 1 ;
+      }
+      .card__island--disable{
+         flex-grow: 1 ;
+  }
+ }
+   .card__container2{
+      display:flex;
+      justify-content: unset;
+      .card__upload{
+          flex-grow: 1;
+      }
+  }
+  .card__container3{
+      display:flex;
+      justify-content: unset;
+      .card__tags{
+          display:flex;
+          justify-content: unset;
+          .pictures{
+              flex-grow: 1;
+          }
+          .places--disable{
+              flex-grow: 1;
+          }
+          .trip--disable{
+              flex-grow: 1;
+          }
+      }
+      .card__container4{
+          display:flex;
+          justify-content: unset;
+          height:70%;
+          .card__rome{
+              flex-grow: 1;
+              
+          }
+          .card__vatican{
+              flex-grow: 1;
+          }
+   }
+  }
+
+  .card__container5{
+      display:flex;
+      justify-content: unset;
+      .card__doors{
+          flex-grow: 1;
+      }
+      .card__house{
+          flex-grow: 1;
+      }
+
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .card__container-main {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6,1fr);
+    grid-template-areas:
+     "t1 t2"
+     "t3 t4 " 
+     "m5 m5" 
+     "m6 m6" 
+     "b7 b8"
+     "b9 b9";
+    grid-gap: 0;
+  }
+
+  .card__spain--disable {
+    grid-area: t1;
+  }
+  .card__container1{
+    grid-area: t2;
+  }
+
+  .card__container2 {
+    grid-area: t3;
+  }
+
+  .card__venice-small {
+    grid-area: t4;
+  }
+
+  .card__florence {
+    grid-area: m5;
+  }
+
+  .card__container3 {
+    grid-area: m6;
+  }
+
+  .card__monuments--disable {
+    grid-area: b7;
+  }
+
+  .card__container5 {
+    grid-area: b8;
+  }
+
+  .card__venice-big--disable {
+    grid-area: b9;
+  }
+  .card__container1{
+      display:flex;
+      justify-content: unset;
+      .card__gardens--disable{
+         flex-grow: 1 ;
+      }
+      .card__island--disable{
+         flex-grow: 1 ;
+  }
+ }
+   .card__container2{
+      display:flex;
+      justify-content: unset;
+      .card__upload{
+          flex-grow: 1;
+      }
+  }
+  .card__container3{
+      display:flex;
+      justify-content: unset;
+      .card__tags{
+          display:flex;
+          justify-content: unset;
+          .pictures{
+              flex-grow: 1;
+          }
+          .places--disable{
+              flex-grow: 1;
+          }
+          .trip--disable{
+              flex-grow: 1;
+          }
+      }
+      .card__container4{
+          display:flex;
+          justify-content: unset;
+          height:70%;
+          .card__rome{
+              flex-grow: 1;
+              
+          }
+          .card__vatican{
+              flex-grow: 1;
+          }
+   }
+  }
+
+  .card__container5{
+      display:flex;
+      justify-content: unset;
+      .card__doors{
+          flex-grow: 1;
+      }
+      .card__house{
+          flex-grow: 1;
+      }
+
+  }
+}
+
+  

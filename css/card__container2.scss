@@ -7,7 +7,7 @@
         width:48%;
         height:100%;
         background: white;
-        box-shadow: $box-shadow;
+        @include shadow;
         &-border{
             margin:10px;
             border:dashed rgb(73, 62, 62) 1px;
@@ -58,7 +58,7 @@
         width:24%;
         height:100%;
         background: center/cover url(../img/burano.png) no-repeat;
-        border-radius: 5px;
+        @include shadow;
         display: flex;
         flex-direction: column;
         justify-content:space-between;
@@ -109,7 +109,7 @@
     .card__places{
         width:24%;
         height:100%;
-        border-radius: 5px;
+        @include shadow;
         background: center/cover url(../img/doors.png) no-repeat;
         display: flex;
         justify-content: center;

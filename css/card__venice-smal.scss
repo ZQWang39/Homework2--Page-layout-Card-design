@@ -2,8 +2,7 @@
 .card__venice-small{
     position:relative;
     grid-area:middle1;
-    border-radius: 5px;
-    box-shadow: $box-shadow;
+    @include shadow;
     overflow: hidden;
     .card__venice-background{
         width: 100%;

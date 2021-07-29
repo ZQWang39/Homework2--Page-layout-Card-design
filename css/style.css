@@ -29,28 +29,28 @@
   width: 22%;
   height: 100%;
   background: center/cover no-repeat url(../img/places.JPG);
-  box-shadow: 3px 3px 3px #ddd9d9;
   border-radius: 5px;
+  box-shadow: 3px 3px 3px #ddd9d9;
 }
 .card__container3 .card__tags .trip--disable {
   width: 44%;
   height: 100%;
   background: center/cover no-repeat url(../img/trip.JPG);
-  box-shadow: 3px 3px 3px #ddd9d9;
   border-radius: 5px;
+  box-shadow: 3px 3px 3px #ddd9d9;
 }
 
 .card__monuments--disable {
   grid-area: bottom1;
   background: center/cover no-repeat url(../img/monuments.JPG);
-  box-shadow: 3px 3px 3px #ddd9d9;
   border-radius: 5px;
+  box-shadow: 3px 3px 3px #ddd9d9;
 }
 
 .card__venice-big--disable {
   grid-area: bottom3;
-  box-shadow: 3px 3px 3px #ddd9d9;
   border-radius: 5px;
+  box-shadow: 3px 3px 3px #ddd9d9;
   background: center/cover no-repeat url(../img/card14.png);
 }
 
@@ -63,6 +63,7 @@
   width: 48%;
   height: 100%;
   background: white;
+  border-radius: 5px;
   box-shadow: 3px 3px 3px #ddd9d9;
 }
 .card__container2 .card__upload-border {
@@ -109,6 +110,7 @@
   height: 100%;
   background: center/cover url(../img/burano.png) no-repeat;
   border-radius: 5px;
+  box-shadow: 3px 3px 3px #ddd9d9;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -158,6 +160,7 @@
   width: 24%;
   height: 100%;
   border-radius: 5px;
+  box-shadow: 3px 3px 3px #ddd9d9;
   background: center/cover url(../img/doors.png) no-repeat;
   display: flex;
   justify-content: center;
@@ -264,8 +267,8 @@
   grid-area: middle2;
   position: relative;
   background: center/cover no-repeat url(../img/florence.png);
-  border-radius: 10px;
   overflow: hidden;
+  border-radius: 5px;
   box-shadow: 3px 3px 3px #ddd9d9;
 }
 .card__florence-background {
@@ -349,8 +352,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: 3px 3px 3px #ddd9d9;
   border-radius: 5px;
+  box-shadow: 3px 3px 3px #ddd9d9;
 }
 .card__container3 .card__tags .pictures-icon {
   width: 15px;
@@ -377,8 +380,8 @@
   width: 48%;
   height: 100%;
   background: center/cover no-repeat url(../img/rome.png);
-  box-shadow: 3px 3px 3px #ddd9d9;
   border-radius: 5px;
+  box-shadow: 3px 3px 3px #ddd9d9;
 }
 .card__container3 .card__container4 .card__rome-header {
   width: 80%;
@@ -425,8 +428,8 @@
   width: 48%;
   height: 100%;
   background: center/cover no-repeat url(../img/vatican.png);
-  box-shadow: 3px 3px 3px #ddd9d9;
   border-radius: 5px;
+  box-shadow: 3px 3px 3px #ddd9d9;
   border-bottom: solid #0570d4 3px;
 }
 .card__container3 .card__container4 .card__vatican-header {
@@ -492,8 +495,8 @@
   width: 48%;
   height: 100%;
   background: center/cover no-repeat url(../img/doors.png);
-  box-shadow: 3px 3px 3px #ddd9d9;
   border-radius: 5px;
+  box-shadow: 3px 3px 3px #ddd9d9;
   border-bottom: #af1b0b solid 2px;
 }
 .card__container5 .card__doors-like {
@@ -537,8 +540,8 @@
   height: 100%;
   position: relative;
   background: center/cover no-repeat url(../img/burano.png);
-  box-shadow: 3px 3px 3px #ddd9d9;
   border-radius: 5px;
+  box-shadow: 3px 3px 3px #ddd9d9;
 }
 .card__container5 .card__house-like {
   width: 25px;
@@ -564,8 +567,8 @@
   width: 90%;
   background: white;
   border-radius: 8px;
-  box-shadow: 3px 3px 3px #ddd9d9;
   border-radius: 5px;
+  box-shadow: 3px 3px 3px #ddd9d9;
   display: flex;
   justify-content: space-around;
 }

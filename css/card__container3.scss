@@ -18,8 +18,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            box-shadow: $box-shadow;
-            border-radius: 5px;
+            @include shadow;
             &-icon{
                width:15px;
                height:15px;
@@ -47,8 +46,7 @@
             width: 48%;
             height:100%;
             background:center/cover no-repeat url(../img/rome.png);
-            box-shadow:$box-shadow;
-            border-radius: 5px;
+            @include shadow;
             &-header{
                 width: 80%;
                 display:flex;
@@ -97,8 +95,7 @@
             width: 48%;
             height:100%;
             background:center/cover no-repeat url(../img/vatican.png);
-            box-shadow:$box-shadow;
-            border-radius: 5px;
+            @include shadow;
             border-bottom: solid $button-color 3px;
             &-header{
                 width: 80%;

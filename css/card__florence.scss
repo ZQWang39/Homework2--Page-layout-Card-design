@@ -3,9 +3,8 @@
     grid-area:middle2;
     position: relative;
     background:center/cover no-repeat url(../img/florence.png);
-    border-radius: 10px;
     overflow: hidden;
-    box-shadow: $box-shadow;
+    @include shadow;
     &-background{
         position: absolute;
         color:rgba(255,255,255,.1);

@@ -8,8 +8,7 @@
         width: 48%;
         height:100%;
         background:center/cover no-repeat url(../img/doors.png);
-        box-shadow: $box-shadow;
-        border-radius: 5px;
+        @include shadow;
         border-bottom: rgb(175, 27, 11) solid 2px;
         &-like{
             width: 25px;
@@ -57,8 +56,7 @@
         height:100%;
         position:relative;
         background:center/cover no-repeat url(../img/burano.png);
-        box-shadow: $box-shadow;
-        border-radius: 5px;
+        @include shadow;
         &-like{
             width: 25px;
             height:25px;
@@ -84,8 +82,7 @@
               
                 background: white;
                 border-radius: 8px;
-                box-shadow: $box-shadow;
-                border-radius: 5px;
+                @include shadow;
                 display: flex;
                 justify-content: space-around;
                 .card__house-content{
