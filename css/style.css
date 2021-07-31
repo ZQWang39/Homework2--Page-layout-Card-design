@@ -539,7 +539,6 @@
 .card__container5 .card__house {
   width: 48%;
   height: 100%;
-  position: relative;
   background: center/cover no-repeat url(../img/burano.png);
   border-radius: 5px;
   box-shadow: 3px 3px 3px #ddd9d9;
@@ -557,15 +556,14 @@
   background: center/cover no-repeat url(../img/icon-heart-hovered.svg);
 }
 .card__container5 .card__house-content-container {
-  width: 100%;
-  height: 80px;
-  position: absolute;
-  top: 75%;
+  margin-top: 75%;
+  margin-bottom: -50px;
   display: flex;
   justify-content: center;
 }
 .card__container5 .card__house-content-container .card__house-content-tag {
   width: 90%;
+  padding: 10px;
   background: white;
   border-radius: 8px;
   border-radius: 5px;
@@ -580,6 +578,7 @@
 }
 .card__container5 .card__house-content-container .card__house-content-tag .card__house-content-reviews {
   font-size: 10px;
+  margin-bottom: 5px;
 }
 .card__container5 .card__house-content-container .card__house-content-tag .card__house-content-reviews-stars {
   color: yellow;
@@ -588,8 +587,8 @@
   color: grey;
 }
 .card__container5 .card__house-content-container .card__house-content-tag .card__house-content-details {
-  margin-top: 5px;
-  line-height: 10px;
+  padding-bottom: 5px;
+  padding-top: 5px;
 }
 .card__container5 .card__house-content-container .card__house-content-tag .card__house-content-details-title {
   font-size: 15px;
