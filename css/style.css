@@ -650,7 +650,7 @@ time, mark, audio, video {
   color: rgba(255, 255, 255, 0.767);
 }
 
-div[id=transform]:hover {
+div[class*=transform]:hover {
   transform: scale(1.1);
   transition: 0.8s;
 }

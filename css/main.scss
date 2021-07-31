@@ -44,7 +44,7 @@ time, mark, audio, video {
     color:$text-color;
 }
 
-div[id="transform"]:hover{
+div[class*="transform"]:hover{
     transform:scale(1.1);
     transition: 0.8s;
 
